@@ -8,45 +8,63 @@ h2 {
     margin-left: 50px;
 }
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
+.drop-down {
     position: relative;
-    /* display: inline-block; */
+    display: inline-block; /* so the menu doesn't appear 
+    when hovering to the right of the button */
     margin-left: 50px;
 }
 
 .button {
     background-color: blue;
+    border-color: blue;
     color: white;
     font-size: 18px;
-    padding: 12px;
-    border-color: blue;
+    padding: 12px 22px;
 }
 
-/* Dropdown Content (Hidden by Default) */
-.menu-items {
-    display: none;
-    position: absolute;
-    background-color: skyblue;
+.menu, .submenu {
+    display: none; /* so the menu is hidden */
+    position: absolute; /* so the menu appears in front 
+    of other content */
+    background-color: skyblue; /* so the menu 
+    background is not transparent */
     z-index: 1;
 }
 
-/* Links inside the dropdown */
-.menu-items a {
+.menu a {
     color: blue;
     text-decoration: none;
     padding: 12px 22px;
-    display: block;
+    display: block; /* so the menu items are displayed 
+    vertically */
 }
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .menu-items {
-    display: block;
+.drop-down:hover .menu, .pizza:hover #pizza-menu, 
+.pasta:hover #pasta-menu, .beverages:hover #beverage-menu 
+{
+    display: block; /* so the menu appears */
 }
 
-/* Change color of dropdown links on hover */
-.menu-items a:hover {
+.menu a:hover {
     background-color: rgb(94, 165, 247);
+}
+
+.submenu {
+    left: 119px;
+}
+
+#pizza-menu {
+    top: 0;
+}
+
+#pasta-menu {
+    top: 42px;
+    width: 216px;
+}
+
+#beverage-menu {
+    top: 84px;
 }
 
 .text {
