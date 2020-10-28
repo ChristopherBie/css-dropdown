@@ -1,3 +1,8 @@
+* {
+    margin: 0px;
+}
+
+
 body {
     font-family: Helvetica;
 }
@@ -51,11 +56,11 @@ h2 {
 }
 
 .submenu {
-    left: 119px;
+    left: 159px;
 }
 
 #pizza-menu {
-    top: 0;
+    top: 0px;
 }
 
 #pasta-menu {
@@ -68,7 +73,7 @@ h2 {
 }
 
 .text {
-    background-color: skyblue;
+    background-color: lightgreen;
     padding-left: 50px;
 }
 
